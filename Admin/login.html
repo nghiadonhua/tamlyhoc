@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src = "./jquery-3.6.0.js"></script>
+    <script src="./login.js"></script>
+</head>
+<body onload="pdn()">
+    <div id ="1" class="modal">
+        <div class="modal-overlay"></div>
+        <div id ="fdk" class="modal-body"></div>
+        <div id ="fdn" class="modal-body">
+            <div style="padding-left: 30px; padding-right: 30px;">
+                <div class="form">
+                        <h3 class="form-heading">Đăng nhập</h3>
+                </div>
+                <div class="form-form">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" placeholder="Nhập tên tài khoản">
+                    </div> <br>
+                    <div class="form-group">
+                        <input type="password"  id="pass" class="form-input" placeholder="Nhập mật khẩu">
+                    </div> <br>
+                </div>
+                <div class="form-law">
+                    <div class="form-help">
+                        <a href="" class="form-help-link" style="color: #EE0000;">Quên mật khẩu</a> 
+                    </div> <br> <br> <br><br>
+                </div>
+                <div class="btn-submit">
+                    <input type ="checkbox" id="auto-login" name="auto-login">
+                    <label for="auto-login">Tự động đăng nhập</label>
+                    <button class="btns btn-Login" onclick="checkadmin()" style=" color: white;">Đăng Nhập</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

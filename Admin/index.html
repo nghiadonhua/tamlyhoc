@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="chart.js"></script>
+    <script src="/Class/boostrap4/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <div class="log">
+            <label>Admin</label>
+            <a href="Login.html" class="logout">
+            <img src="https://png.pngtree.com/element_our/png_detail/20181205/shutdown-vector-icon-png_256704.jpg">
+            Logout
+            </a>
+        </div>
+        <div class="label">
+            <img class="logo" src="" alt="">
+            <h2>Shop Kính Mắt</h2>
+             <h3>HỆ THỐNG QUẢN TRỊ</h3>
+        </div>
+       
+    </div>
+    <hr style="background-color:rgb(218, 91, 91); height:4px; margin-block-start: 0em; margin-block-end: 0em;">
+    <hr style="background-color:rgb(14, 36, 226); height:4px; margin-block-start: 0em; margin-block-end: 0em;">
+
+    <div class="menutab">
+        <div class="user">
+            <h2>Admin</h2>
+            <img src="" alt="">
+            <span class="">Lê Xuân Trường</span>
+        </div>
+        <ul class="menu">
+            <li><a class="ma" href="Admin.html">Trang chủ</a></li>
+            <li class ='s112'><a href="Gen.html">Quản lý dòng sản phẩm</a></li>
+            <li class ='s112'><a href="Product.html">Quản lý sản phẩm</a></li>
+            <li class ='s122'><a href="Order.html">Quản lý  hóa đơn nhập</a></li>
+            <li class ='s122'><a href="Order.html">Quản lý khách hàng</a></li>
+            <li class ='s122'><a href="">Quản lý đơn hàng</a></li>
+            <li class ='s132'><a href ='News.html'>Quản ký bài viết</a></li>
+            <li class ='s132'><a href="">Quản lý nhà cung cấp</a></li>
+            <li class ='s132'><a href="">Quản lý tài khoản</a></li>
+        </ul>
+    </div>
+    <div class="infor">
+        <a class ='chart' href =""><canvas id="myChart" style="width:100%; width:480px"></canvas></a>
+        <div class="cn">
+            <div class="c">
+                <i class="fa fa-book" style="font-size:40px;"></i>
+                <a href=""><span>Quản lý hóa đơn</span></a>
+            </div>
+            <div class="c">
+                <i class="fa fa-briefcase" style="font-size:40px"></i>
+                <a href=""><span>Quản lý sản phẩm</span></a>
+            </div>
+            <div class="c">
+                <i class="material-icons" style="font-size:40px">person</i>
+                <a href=""><span>Quản lý khách hàng</span></a>
+            </div>
+            <div class="c">
+                <i class="fa fa-file" style="font-size:40px;"></i>
+                <a href=""><span>Quản lý Bài viết</span></a>
+            </div>
+        </div>
+        
+        <!--<div class="a">
+            <button class ='view'>Xem chi tiết</button>
+            <button class ='view'>Sản phẩm vừa nhập</button>
+            <button class ='view'>Thống kê đơn hàng</button>
+            <button class ='view'>Xem bài viết</button>
+        </div>-->
+        
+    </div>
+    <div id="footer">
+        <div class="about col-4 col-m6 col-s12">
+            <h2>Về chúng tôi</h2>
+            <img src="" alt="">
+            <h3>Cửa hàng Kính Mắt</h3><br>
+            <h4><a href="">Lịch sử</a></h4>
+            <h4><a href="">Hợp tác</a></h4>
+            <h4><a href="">Trợ giúp khách hàng</a></h4>
+        </div>
+        <div class="contact col-4 col-m6 col-s12">
+            <h2>Liên hệ</h2>
+            <h4>Emal: kinhmatauth@gmail.com</h4>
+            <h4>Số điện thoại: 0334363462</h4>
+            
+            <h4></h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.8464562538502!2d106.05965336923083!3d20.94167028979476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a30555555555%3A0x39a8acd006ab8e69!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgVGh14bqtdCBIxrBuZyBZw6puLCBDxqEgc-G7nyAy!5e1!3m2!1svi!2s!4v1619946614011!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="acount col-4 col-m6 col-s12">
+            <h2>Thông tin tài khoản</h2>
+            <p>
+                Chủ TK: LE XUAN TRƯỜNG
+                <br><br>
+                BIDV:0212345678<br><br>               
+                
+            </p>
+        </div>
+    </div>
+
+    <script>chart()</script>
+</body>
+</html>

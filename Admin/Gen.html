@@ -1,0 +1,240 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn Hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="add-form.css">
+    <script src="/Class/boostrap4/js/jquery-3.6.0.min.js"></script>
+    <script src="login.js"></script>
+    <script src="Add.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="log">
+            <label>Admin</label>
+            <a href="Login.html" class="logout">
+            <img src="https://png.pngtree.com/element_our/png_detail/20181205/shutdown-vector-icon-png_256704.jpg">
+            Logout
+            </a>
+        </div>
+        <div class="label">
+            
+            <h2>Shop kính mắt</h2>
+             <h3>HỆ THỐNG QUẢN TRỊ</h3>
+        </div>
+       
+    </div>
+    <hr style="background-color:rgb(218, 91, 91); height:4px; margin-block-start: 0em; margin-block-end: 0em;">
+    <hr style="background-color:rgb(14, 36, 226); height:4px; margin-block-start: 0em; margin-block-end: 0em;">
+
+    <div class="menutab">
+        <div class="user">
+            <h2>Admin</h2>
+            
+            <span class="">Xuân Trường</span>
+        </div>
+        <ul class="menu">
+            <li><a class="ma" href="Admin.html">Trang chủ</a></li>
+            <li class="s112"><a href="Order.html">Quản lý dòng sản phẩm</a></li>
+            <li class="s112"><a href="">Quản lý sản phẩm</a></li>
+            <li class="s122"><a href="Order.html">Quản lý  hóa đơn nhập</a></li>
+            <li class="s122"><a href="Order.html">Quản lý khách hàng</a></li>
+            <li class="s122"><a href="">Quản lý đơn hàng</a></li>
+            <li class="s132"><a href="Product.html">Quản ký bài viết</a></li>
+            <li class="s132"><a href="">Quản lý nhà cung cấp</a></li>
+            <li class="s132"><a href="">Quản lý tài khoản</a></li>
+        </ul>
+    </div>
+    <div class="infor">
+        <h3>QUẢN LÝ SẢN PHẨM</h3>
+        <button class="btn add-type" onclick="loadform()">Thêm dòng sản phẩm</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="stt">STT</th>
+                    <th class="id">Mã Sản Phẩm</th>
+                    <th class="name">Tên Sản phẩm</th>
+                    
+                    
+                    <th class="type">Thương Hiệu</th>
+                    <th class="type">Loại kính</th>
+                    <th class="sua">Sửa</th>
+                    <th class="del">Xóa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="item">
+                    <td class="a1" scope="row">1</td>
+                    <td class="a2">RB-3362-002/4O(59CN)</td>
+                    <td class="a3">KÍNH RAYBAN</td>
+                    
+                    <td class="a5">Kính mát Ray Ban</td>
+                    
+                    <td class="a7">unisex</td>
+                    <td><i class="fa fa-wrench edit" style="font-size:28px"></i></td>
+                    <td><i class="material-icons del" style="font-size:28px">delete</i></td>
+                </tr>
+                <tr class="item">
+                    <td class="a1" scope="row">2</td>
+                    <td class="a2">BUR-3102-1283/8G(39IT)</td>
+                    <td class="a3">KÍNH MÁT BURBERRY</td>
+                    <td class="a4">Kính mát Burberry</td>
+                    
+                    <td class="a6">Nữ</td>
+                    
+                    <td><i class="fa fa-wrench edit" style="font-size:28px"></i></td>
+                    <td><i class="material-icons del" style="font-size:28px">delete</i></td>                
+                </tr>
+                <tr class="item">
+                    <td class="a1" scope="row">3</td>
+                    <td class="a2">MK-1045-1014/11(56CN)</td>
+                    <td class="a3">KÍNH MÁT MICHAEL KORS</td>
+                    
+                    <td class="a5">Kính mát Michael Kors</td>
+                    
+                    <td class="a7">Nữ</td>
+                    <td><i class="fa fa-wrench edit" style="font-size:28px"></i></td>
+                    <td><i class="material-icons del" style="font-size:28px">delete</i></td>                
+                </tr>
+                <tr class="item">
+                    <td class="a1" scope="row">4</td>
+                    <td class="a2">PR-0PR 14TS-VH34P0(53IT)</td>
+                    <td class="a3">KÍNH MÁT PRADA</td>
+                    <td class="a4">Kính mát Prada</td>
+                    <td class="a5">Nữ</td>
+                    
+                    
+                    <td><i class="fa fa-wrench edit" style="font-size:28px"></i></td>
+                    <td><i class="material-icons edit" style="font-size:28px">delete</i></td>                
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <a href="">
+            <li>&lt;</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>&gt;</li>
+            </a>
+        </ol>
+    </div>
+    <div id="footer">
+        <div class="about col-4 col-m6 col-s12">
+            <h2>Về chúng tôi</h2>
+            <img src="" alt="">
+            <h3>Cửa hàng kính mắt đăng quang</h3><br>
+            <h4><a href="">Lịch sử</a></h4>
+            <h4><a href="">Hợp tác</a></h4>
+            <h4><a href="">Trợ giúp khách hàng</a></h4>
+        </div>
+        <div class="contact col-4 col-m6 col-s12">
+            <h2>Liên hệ</h2>
+            <h4>Emal: kinhmatdangquang@gmail.com</h4>
+            <h4>Số điện thoại: 0345561888</h4>
+            
+            <h4></h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.8464562538502!2d106.05965336923083!3d20.94167028979476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a30555555555%3A0x39a8acd006ab8e69!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgVGh14bqtdCBIxrBuZyBZw6puLCBDxqEgc-G7nyAy!5e1!3m2!1svi!2s!4v1619946614011!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="acount col-4 col-m6 col-s12">
+            <h2>Thông tin tài khoản</h2>
+            <p>
+                Chủ TK: Xuân Trường
+                <br><br>
+                                
+                AgriBank: 1303206306288<br><br>
+            </p>
+        </div>
+
+    </div>
+    <div class="add-form" id="form" style="display: none;">
+        <div class="over-play"></div>
+        <div class="body">
+            <div class="info">
+                <h3>Thêm sản phẩm</h3>
+                <div class="left">
+                    <div class="s1">
+                        <label for="">Sản phẩm</label><br>
+                        <input class="a2" type="text" placeholder="">
+                    </div>
+                    <div class="s1">
+                        <label for="">Tên Sản Phẩm</label><br>
+                        <input class="a3" type="text" placeholder=""> 
+                    </div>
+                    <div class="s1">
+                        <label for="">Thương Hiệu</label><br>
+                        <input class="a4" type="text" placeholder=""> 
+                    </div>    
+                </div>
+                <div class="right">
+                    <div class="s1">
+                        <label for="">Mã Sản phẩm</label><br>
+                        <input class="a5" type="text" placeholder=""> 
+                    </div>
+                    <div class="s1">
+                        <label for="">Thương hiệu</label><br>
+                        <input class="a6" type="text" placeholder=""> 
+                    </div>
+                    <div class="s1">
+                        <label for="">Loại kính</label><br>
+                        <input class="a7" type="text" placeholder=""> 
+                    </div>
+    
+                </div>
+                <input type="button" value="Thêm" class="btn-sub">
+                <input type="button" value="Trở về" onclick="exitform()" class="btn-back">
+            </div>
+        </div>
+    </div>
+    <div class="add-form" id="form2">
+        <div class="over-play"></div>
+        <div class="body">
+            <div class="info2">
+                <h3>Sửa dòng sản phẩm</h3>
+                <div class="left">
+                    <div class="s1">
+                        <label for="">Mã dòng</label><br>
+                        <input class="a2" type="text" placeholder="Mã dòng">
+                    </div>
+                    <div class="s1">
+                        <label for="">Thông tin dòng</label><br>
+                        <input class="a3" type="text" placeholder="Thông tin dòng"> 
+                    </div>
+                    <div class="s1">
+                        <label for="">Mô tả</label><br>
+                        <input class="a4" type="text" placeholder="Mô tả"> 
+                    </div>    
+                </div>
+                <div class="right">
+                    <div class="s1">
+                        <label for="">Mã loại</label><br>
+                        <input class="a5" type="text" placeholder="Mã loại"> 
+                    </div>
+                    <div class="s1">
+                        <label for="">Hãng sản xuất</label><br>
+                        <input class="a6" type="text" placeholder="Hãng sản xuất"> 
+                    </div>
+                    <div class="s1">
+                        <label for="">Năm sản xuất</label><br>
+                        <input class="a7" type="text" placeholder="Năm sản xuất"> 
+                    </div>
+    
+                </div>
+                <input type="button" value="Sửa" class="btn-edit">
+                <input type="button" value="Trở về" onclick="exitform2()" class="btn-back">
+            </div>
+        </div>
+    </div>
+
+</body></html>
